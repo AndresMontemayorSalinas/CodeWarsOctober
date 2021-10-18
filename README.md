@@ -1,2 +1,3 @@
-# CodeWarsSeptember
-Repo to begin development of the code wars for September
+# CodeWarsOctober
+
+Repo to begin development of the code wars for October
