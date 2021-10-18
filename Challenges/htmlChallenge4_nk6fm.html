@@ -29,47 +29,6 @@
           font-size: 3.5rem;
         }
       }
-      .containerCounter {
-        background-color: #88B169; 
-        width:500px;
-        height:250px;
-        border: 10px solid #926981;
-        margin: 50px auto
-      }
-      h1{
-        text-align: center;
-        color: white;
-      }
-      #number {
-        height: 25px;
-        width: 250px;
-        margin: 50px auto;
-        border: 1px solid black;
-        text-align: center;
-        background-color: white;
-      }
-      #increment {
-        height:25px;
-        width: 100px;
-        margin-top: 15px;
-        margin-left: 125px;
-      }
-      #decrement {
-        height:25px;
-        width: 100px;
-        margin-top: 15px;
-        margin-left: 50px;
-      }
-      #submit {
-        height:25px;
-        width: 100px;
-        /* margin-top: 15px; */
-        margin-left: 50px;
-        background-color: turquoise;
-      }
-
-       
-
     </style>
 
     
@@ -95,7 +54,7 @@
         <h1 class="fw-light" style="color:black; font-size: 72px;">HTML Challenge</h1>
         <p class="" style="color:black; font-size: 24px;">
           <br>
-Instructions: There are many buttons inside this webpage. Only one will take you into the next step of the challenge. Good luck finding it!!
+Instructions: Hit a sequence of button to disable the button to go to the next page
        </p>
 
       </div>
@@ -103,14 +62,9 @@ Instructions: There are many buttons inside this webpage. Only one will take you
   </section>
 
   <div class="album py-2"  style="background-color: #5AB9EA ">
-    <!-- <div class="containerCounter" style="background-color: red; width:200px"> -->
-    <div class="containerCounter">
-      <h1 id="counterTitle">Counter</h1>
-      <div id="number">0</div>
-      <button id="increment">+</button>
-      <button id="decrement">-</button>
-      <br />
-      <button id="sumbit">Sumbit</button>
+    <h1> Congratulations!! You solved the HTML challenge! The hidden Flag is the following:</h1>
+    <h1> Why was the skeleton sad? He had no body to trick-or-treat with.</h1>
+    <img src="../Pictures/skeleton.jpg" />
         
     </div>
   </div>
@@ -160,23 +114,3 @@ Instructions: There are many buttons inside this webpage. Only one will take you
 </head>
 
 <!-- <body style="background-color: #b8c0c2"> -->
-  
-  <script>
-    let add = document.getElementById('increment');
-    let subtract = document.getElementById('decrement');
-   
-    let int = document.getElementById('number');
-    let integer = 0;
-
-    add.addEventListener('click', function(){
-      integer += 1;
-      int.innerHTML = integer;
-    })
-
-    subtract.addEventListener('click', function(){
-      integer -= 1;
-      int.innerHTML = integer;
-    })
-
-  </script>
-
