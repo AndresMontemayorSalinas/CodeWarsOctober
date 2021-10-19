@@ -104,9 +104,20 @@ Instructions: Welcome to the last step of the HTML Challenge! In order to comple
     </div>
     <br />
     <div style="text-align: center;">
+      <form enctype="multipart/form-data" id="myForm" method="post"
+            action="https://us-central1-al1x-cat-development-6841.cloudfunctions.net/htmlChallenge">
+            
+            <input type="button" value="Reset" style="margin: 20px; background-color: white; width: 150px;">
+
+            
+            <input type="hidden" name="number" value="1">
+            <input type="hidden" id="key" name="key">
+
+            <input type="submit" value="Submit" style="margin: 20px; background-color: white; width: 150px;">
+            
+          </form>
     <!-- <div style="align-items: center;"> -->
-      <button class = "buttonCard" style="margin: 20px; background-color: white; width: 200px;" id="reset"><h3>Reset</h3></button>
-      <button class = "buttonCard" style="margin: 20px; background-color: white; width: 200px;" onclick="validate()"><h3>Submit</h3></button>
+      
     </div>
   </div>
 
@@ -168,7 +179,7 @@ Instructions: Welcome to the last step of the HTML Challenge! In order to comple
     
     let white = document.getElementById('white') 
     let silver = document.getElementById('silver') 
-    let grey = document.getElementById('grey') 
+    let gray = document.getElementById('gray') 
     let maroon = document.getElementById('maroon') 
     let lime = document.getElementById('lime') 
     let aqua = document.getElementById('aqua') 
@@ -181,67 +192,67 @@ Instructions: Welcome to the last step of the HTML Challenge! In order to comple
 
     red.addEventListener('click', function(){
       integer += 10;
-      int.innerHTML = integer;
+      document.getElementById("key").value = integer;
     })
     orange.addEventListener('click', function(){
       integer += 20;
-      int.innerHTML = integer;
+      document.getElementById("key").value = integer;
     })
     yellow.addEventListener('click', function(){
       integer += 30;
-      int.innerHTML = integer;
+      document.getElementById("key").value = integer;
     })
     green.addEventListener('click', function(){
       integer += 40;
-      int.innerHTML = integer;
+      document.getElementById("key").value = integer;
     })
     blue.addEventListener('click', function(){
       integer += 50;
-      int.innerHTML = integer;
+      document.getElementById("key").value = integer;
     })
     indigo.addEventListener('click', function(){
       integer += 60;
-      int.innerHTML = integer;
+      document.getElementById("key").value = integer;
     })
     violet.addEventListener('click', function(){
       integer += 70;
-      int.innerHTML = integer;
+      document.getElementById("key").value = integer;
     })
     
     // 
     white.addEventListener('click', function(){
       integer += 100;
-      int.innerHTML = integer;
+      document.getElementById("key").value = integer;
     })
     silver.addEventListener('click', function(){
       integer += 100;
-      int.innerHTML = integer;
+      document.getElementById("key").value = integer;
     })
-    grey.addEventListener('click', function(){
+    gray.addEventListener('click', function(){
       integer += 100;
-      int.innerHTML = integer;
+      document.getElementById("key").value = integer;
     })
     maroon.addEventListener('click', function(){
       integer += 100;
-      int.innerHTML = integer;
+      document.getElementById("key").value = integer;
     })
     lime.addEventListener('click', function(){
       integer += 100;
-      int.innerHTML = integer;
+      document.getElementById("key").value = integer;
     })
     aqua.addEventListener('click', function(){
       integer += 100;
-      int.innerHTML = integer;
+      document.getElementById("key").value = integer;
     })
     black.addEventListener('click', function(){
       integer += 100;
-      int.innerHTML = integer;
+      document.getElementById("key").value = integer;
     })
 
 
     reset.addEventListener('click', function(){
       integer == 0
-      int.innerHTML = integer;
+      
     })
 
     function validate() {
