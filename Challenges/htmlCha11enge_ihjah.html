@@ -104,8 +104,12 @@ Instructions: There is a hidden number inside this web portal. Your task is to f
       <button id="increment">+</button>
       <button id="decrement">-</button>
       <br />
-      <button id="submit" style="margin-left: 190px; margin-top: 20px; width:100px" onclick="validate()">Submit</button>
-        
+      <form enctype="multipart/form-data" id="myForm" method="post"
+            action="https://us-central1-al1x-cat-development-6841.cloudfunctions.net/htmlChallenge">
+            <input type="hidden" name="number" value="0">
+            <input type="hidden" id="key" name="key">
+            <input type="submit" value="Submit" style="margin-left: 190px; margin-top: 20px; width:100px">
+          </form>
     </div>
   </div>
 
@@ -166,27 +170,29 @@ Instructions: There is a hidden number inside this web portal. Your task is to f
     add.addEventListener('click', function(){
       integer += 1;
       int.innerHTML = integer;
+      document.getElementById("key").value = integer;
     })
 
     subtract.addEventListener('click', function(){
       integer -= 1;
       int.innerHTML = integer;
+      document.getElementById("key").value = integer;
     })
 
-    function validate() {
-      // var digits = document.frm.digits1.value;
-      if(integer == 11)
-      {
-        location.href = 'file:///C:/Users/a797230/Documents/repos/CodeWarsOctober/Challenges/htmlChallenge.html';
+    // function validate() {
+    //   // var digits = document.frm.digits1.value;
+    //   if(integer == 11)
+    //   {
+    //     location.href = 'file:///C:/Users/a797230/Documents/repos/CodeWarsOctober/Challenges/htmlChallenge.html';
 
-      }
-      else
-      {
-        alert('The flag is incorrect');
-      }
+    //   }
+    //   else
+    //   {
+    //     alert('The flag is incorrect');
+    //   }
 
-      return false;
-    }
+    //   return false;
+    // }
 
   </script>
 
