@@ -22,7 +22,7 @@ def hello_world():
     print(request.data)
     print(request.form["data"])
     if str(request.form["data"]) == "CLOUD ENTERPRISE SOLUTIONS":
-        return "https://andresmontemayorsalinas.github.io/CodeWarsAugust/Challenges/Cipher2BaN9qbtd3h.html"
+        return "https://andresmontemayorsalinas.github.io/CodeWarsOctober/Challenges/Cipher2BaN9qbtd3h.html"
     else:
         return f'Try again!!'
 
